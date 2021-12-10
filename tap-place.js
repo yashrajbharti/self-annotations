@@ -31,12 +31,12 @@ const newElement = document.createElement('a-entity')
  newElement.setAttribute('visible', 'true')
 })
 const remove = document.getElementById('snap-button')
-if (place.childNodes.length > 1) {
+
     // It has at least one
 remove.addEventListener('click', (event) => {
   console.log(place.childNodes.length);
+  if (place.childNodes.length > 1) {
   newElement.parentNode.removeChild(place.lastChild)
-
+  }
 });
-}
 });

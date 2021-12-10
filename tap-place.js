@@ -18,17 +18,16 @@ const new2Element = document.createElement('a-entity')
   }
   if (checkbox.checked === true){
     newElement.setAttribute('rotation', '0 0 0')
-    new2Element.setAttribute('rotation', '0 0 90')
+    new2Element.setAttribute('rotation', '0 0 0')
   }
 
  console.log(touchPoint);
  new2Element.setAttribute('position', touchPoint)
     new2Element.setAttribute('visible', 'true')
     new2Element.setAttribute('scale', '1 1 1')
-    new2Element.setAttribute('rotate', '0 0 0')
     new2Element.setAttribute('text', {
       value: 'New Text',
-      color: 'red',
+      color: 'white',
       shader: 'msdf',
       font: './aclonica/Aclonica-Regular.json'
    });

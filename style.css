@@ -30,7 +30,7 @@ button:active{
   transform: translate(20px, -13px);
 }
 
-.switch input {
+.switch input#toggleswitch {
   opacity: 0;
   width: 0;
   height: 0;

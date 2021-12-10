@@ -83,7 +83,7 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 .mode {
-    font-size: 2rem;
+    font-size: 10px;
     font-family: 'Zilla Slab Highlight', cursive;
-    color: white;
+    color: black;
 }

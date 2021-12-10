@@ -10,13 +10,13 @@
   </head>
   <body>
     <div style="position: absolute; z-index: 1000">
-      <div id="mode" class="mode">
-        Fresh <span id="status">Portrait</span> Mode.
-      </div>
       <button id="snap-button">Clear annotation</button>
       <label class="switch">
       <input id="toggleswitch" type="checkbox">
       <span class="slider round"></span>
+      <div id="mode" class="mode">
+        Fresh <span id="status">Portrait</span> Mode.
+      </div>
     </div>
 
     <a-scene mindar-image="imageTargetSrc: targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false" loading-screen="enabled: false">

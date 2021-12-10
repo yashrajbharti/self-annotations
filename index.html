@@ -5,35 +5,16 @@
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
     <script src="image-aframe.js"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div style="position: absolute; z-index: 1000">
       <button id="snap-button">Clear annotation</button>
+      <label class="switch">
+      <input type="checkbox">
+      <span class="slider round"></span>
     </div>
-    <style media="screen">
-    button{
-      border: 2px solid #fff;
-      border-radius: 25px;
-      font-weight: bold;
-      padding: 10px 15px;
-      color: #fff;
-      transform: translate(5px,5px);
-      background-color: #FF10F0;
-      margin: 20px;
-      /* visibility: hidden; */
-    }
-    button:active{
-      border: 2px solid #FF10F0;
-      border-radius: 25px;
-      font-weight: bold;
-      padding: 10px 15px;
-      color: #FF10F0;
-      transform: translate(5px,5px);
-      background-color: #fff;
-      margin: 20px;
-    }
-
-    </style>
+  
     <a-scene mindar-image="imageTargetSrc: targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false" loading-screen="enabled: false">
 
 
@@ -52,7 +33,7 @@
           <a-entity id="faqtext" text="value:To know more about this audio player, tap here; color:#000; shader: msdf; font:./aclonica/Aclonica-Regular.json;" scale="1.2 1.2 1.2" position="0 0.28 0"></a-entity>
           <a-plane id="faq"  color="#fff"  position="-0.065 0.3 -0.0000001" height="0.08" width="1.1" rotation="0 0 0"></a-plane>
           <a-entity id="arrow" gltf-model="#arrow" position="0 -0.3 0" rotation="0 0 90" scale="0.001 0.001 0.001"></a-entity>
-          <a-plane id="place" class="clickable" color="#fff" opacity="0.0" position="0 0 0" height="100" width="100" rotation="0 0 90"></a-plane>
+          <a-plane id="place" class="clickable" color="#fff" opacity="0.0" position="0 0 0" height="100" width="100" rotation="0 0 0"></a-plane>
 
 
           <a-entity geometry="primitive: ring; radiusInner: 0.9; radiusOuter: 1" material="side: double; color:#f00" position="0.025 0.05 0" scale="0.03 0.03 0.03"></a-entity>

@@ -101,10 +101,10 @@ foo.addEventListener('click', (event) => {
     if (place.childNodes.length > 1)
    {
      place.lastChild.setAttribute('text', {
-     value: 'haha',
+     value: textchange.value,
      color: 'white',
      shader: 'msdf',
      font: './aclonica/Aclonica-Regular.json'
   });
-  }
+}
  });

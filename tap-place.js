@@ -13,6 +13,7 @@ const newElement = document.createElement('a-entity')
  checkbox.addEventListener('change', function () {
    if (checkbox.checked) {
      // do this
+     newElement.setAttribute('rotation', '0 0 0')
      place.setAttribute('rotation', '0 0 90')
      while (place.firstChild) {
     place.removeChild(place.lastChild);
@@ -27,9 +28,6 @@ const newElement = document.createElement('a-entity')
  })
   if (checkbox.checked === false){
     newElement.setAttribute('rotation', '0 0 90')
-  }
-  if (checkbox.checked === true){
-    newElement.setAttribute('rotation', '0 0 0')
   }
 
  console.log(touchPoint);

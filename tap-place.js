@@ -15,9 +15,15 @@ const newElement = document.createElement('a-entity')
      // do this
      newElement.setAttribute('rotation', '0 0 0')
      place.setAttribute('rotation', '0 0 90')
+     while (place.firstChild) {
+    place.removeChild(place.lastChild);
+  }
    } else {
      // do that
      place.setAttribute('rotation', '0 0 0')
+     while (place.firstChild) {
+    place.removeChild(place.lastChild);
+  }
    }
  })
   if (checkbox.checked === false){

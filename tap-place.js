@@ -12,7 +12,7 @@ const newElement = document.createElement('a-entity')
  console.log(touchPoint);
    newElement.setAttribute('position', touchPoint)
    newElement.setAttribute('visible', 'false')
-   // newElement.setAttribute('rotation', '0 0 90')
+   newElement.setAttribute('rotation', '0 0 -90')
    newElement.setAttribute('scale', '0.001 0.001 0.001')
 
 
@@ -24,12 +24,12 @@ const newElement = document.createElement('a-entity')
  checkbox.addEventListener('change', function () {
    if (checkbox.checked) {
      // do this
-     newElement.setAttribute('rotation', '0 0 -90')
+     //newElement.setAttribute('rotation', '0 0 -90')
      place.setAttribute('rotation', '0 0 90')
      newElement.parentNode.removeChild()
    } else {
      // do that
-     newElement.setAttribute('rotation', '0 0 0')
+     //newElement.setAttribute('rotation', '0 0 0')
      place.setAttribute('rotation', '0 0 0')
      newElement.parentNode.removeChild()
    }

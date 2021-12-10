@@ -30,9 +30,10 @@ const newElement = document.createElement('a-entity')
  newElement.setAttribute('visible', 'true')
 })
 const remove = document.getElementById('snap-button')
-
+if (place.hasChildNodes()) {
+    // It has at least one
 remove.addEventListener('click', (event) => {
   newElement.parentNode.removeChild(place.lastChild)
 });
-
+}
 });

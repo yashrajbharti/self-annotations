@@ -32,7 +32,7 @@ const newElement = document.createElement('a-entity')
 const remove = document.getElementById('snap-button')
 
 remove.addEventListener('click', (event) => {
-  place.removeChild(newElement)
+  place.removeChild(place.lastChild(newElement))
 });
 
 });

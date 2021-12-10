@@ -49,10 +49,13 @@ document.addEventListener('DOMContentLoaded', function () {
   checkbox.addEventListener('change', function () {
     if (checkbox.checked) {
       // do this
-      console.log('Checked');
+      newElement.setAttribute('rotation', '0 0 0')
+      place.setAttribute('rotation', '0 0 90')
     } else {
       // do that
-      console.log('Not checked');
+      newElement.setAttribute('rotation', '0 0 90')
+      place.setAttribute('rotation', '0 0 0')
+
     }
   });
 });

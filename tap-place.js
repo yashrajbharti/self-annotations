@@ -33,7 +33,5 @@ const newElement = document.createElement('a-entity')
 const remove = document.getElementById('snap-button')
 
 remove.addEventListener('click', (event) => {
-
-    touchPoint.x  *= 1000;
-    newElement.setAttribute('position', touchPoint)
+  place.removeChild(newElement)
 });

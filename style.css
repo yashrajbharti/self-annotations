@@ -86,7 +86,7 @@ input:checked + .slider:before {
     position: absolute;
     padding: 4px;
     font-size: 13px;
-    transform: translate(106px, 3px);
+    transform: translate(166px, 3px);
     font-family: 'Zilla Slab Highlight', cursive;
     color: white;
 }

@@ -14,11 +14,11 @@ const new2Element = document.createElement('a-entity')
 
   if (checkbox.checked === false){
     newElement.setAttribute('rotation', '0 0 90')
-    new2Element.setAttribute('rotation', '0 0 90')
+    new2Element.setAttribute('rotation', '0 0 0')
   }
   if (checkbox.checked === true){
     newElement.setAttribute('rotation', '0 0 0')
-    new2Element.setAttribute('rotation', '0 0 0')
+    new2Element.setAttribute('rotation', '0 0 90')
   }
 
  console.log(touchPoint);

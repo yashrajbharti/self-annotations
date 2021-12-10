@@ -20,10 +20,6 @@ const newElement = document.createElement('a-entity')
      place.setAttribute('rotation', '0 0 0')
    }
  })
- while (checkbox.checked === false) {
-  // code block to be executed
-  newElement.setAttribute('rotation', '0 0 90')
-}
 
  console.log(touchPoint);
    newElement.setAttribute('position', touchPoint)

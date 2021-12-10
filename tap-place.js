@@ -35,7 +35,7 @@ const remove = document.getElementById('snap-button')
     // It has at least one
 remove.addEventListener('click', (event) => {
   console.log(place.childNodes.length);
-  if (place.childNodes.length > 1) {
+  if (place.childNodes.length >= 1) {
   newElement.parentNode.removeChild(place.lastChild)
   }
 });

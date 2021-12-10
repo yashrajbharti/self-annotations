@@ -1,6 +1,6 @@
 const sceneEl = document.querySelector('a-scene');
-const place = document.getElementById('snapshot-target')
-place.addEventListener('targetFound', (event) => {
+const snaptarget = document.getElementById('snapshot-target')
+snaptarget.addEventListener('targetFound', (event) => {
 
 console.log("snap target found");
 // Create new entity for the new object

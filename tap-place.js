@@ -19,8 +19,8 @@ const newElement = document.createElement('a-entity')
  newElement.setAttribute('gltf-model', '#arrow')
 
     place.appendChild(newElement)
-    touchPoint.x  /= 1000;
-    touchPoint.y  /= 2000;
+    touchPoint.x  /= 10000;
+    touchPoint.y  /= 10000;
     touchPoint.z  = 0.00001;
     newElement.setAttribute('position', touchPoint)
 

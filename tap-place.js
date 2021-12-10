@@ -13,6 +13,7 @@ const newElement = document.createElement('a-entity')
  checkbox.addEventListener('change', function () {
    if (checkbox.checked) {
      // do this
+     window.FlashMessage.success('This is a successs flash message !');
      newElement.setAttribute('rotation', '0 0 0')
      place.setAttribute('rotation', '0 0 90')
      while (place.firstChild) {

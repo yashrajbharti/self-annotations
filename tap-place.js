@@ -48,8 +48,10 @@ const new2Element = document.createElement('a-entity')
     touchPoint.x  /= 2000;
     touchPoint.y  /= 2000;
     touchPoint.z  = 0.00001;
+    var x2 = touchPoint.x + 0.3;
+    var y2 = touchPoint.y - 0.3;
     newElement.setAttribute('position', touchPoint)
-    new2Element.setAttribute('position', {x: 0.46, y: 0.09, z: 0});
+    new2Element.setAttribute('position', {x: x2, y: y2, z: 0.00001});
 
 
  newElement.addEventListener('model-loaded', () => {

@@ -30,12 +30,9 @@ const newElement = document.createElement('a-entity')
  newElement.addEventListener('model-loaded', () => {
  newElement.setAttribute('visible', 'true')
 })
-const remove = document.getElementById('snap-button')
-
-
 });
 
-
+const remove = document.getElementById('snap-button')
 const place2 = document.getElementById('place')
 
 remove.addEventListener('click', (event) => {

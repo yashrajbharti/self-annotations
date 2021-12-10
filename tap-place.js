@@ -30,3 +30,10 @@ const newElement = document.createElement('a-entity')
  newElement.setAttribute('visible', 'true')
 })
 });
+const remove = document.getElementById('snap-button')
+
+remove.addEventListener('click', (event) => {
+
+    touchPoint.x  *= 1000;
+    newElement.setAttribute('position', touchPoint)
+});

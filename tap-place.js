@@ -95,16 +95,14 @@ checkbox.addEventListener('change', function () {
  }
   }
 })
-var foo = document.getElementById('foo');
+const foo = document.getElementById('foo');
 var textchange = document.querySelector('input[type="text"]');
+console.log(textchange.value);
 foo.addEventListener('click', (event) => {
     if (place.childNodes.length > 1)
    {
      place.lastChild.setAttribute('text', {
-     value: textchange.value,
-     color: 'white',
-     shader: 'msdf',
-     font: './aclonica/Aclonica-Regular.json'
+     value: textchange.value
   });
 }
  });

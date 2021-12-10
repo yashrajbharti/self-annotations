@@ -7,7 +7,33 @@
     <script src="image-aframe.js"></script>
   </head>
   <body>
+    <div style="position: absolute; z-index: 1000">
+      <button onclick="localStorage.clear();" id="snap-button">Clear annotations</button>
+    </div>
+    <style media="screen">
+    button{
+      border: 2px solid #fff;
+      border-radius: 25px;
+      font-weight: bold;
+      padding: 10px 15px;
+      color: #fff;
+      transform: translate(5px,5px);
+      background-color: #FF10F0;
+      margin: 20px;
+      /* visibility: hidden; */
+    }
+    button:active{
+      border: 2px solid #FF10F0;
+      border-radius: 25px;
+      font-weight: bold;
+      padding: 10px 15px;
+      color: #FF10F0;
+      transform: translate(5px,5px);
+      background-color: #fff;
+      margin: 20px;
+    }
 
+    </style>
     <a-scene mindar-image="imageTargetSrc: targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false" loading-screen="enabled: false">
 
 

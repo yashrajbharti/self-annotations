@@ -9,9 +9,12 @@
   </head>
   <body>
     <div style="position: absolute; z-index: 1000">
+      <div id="ergebnis" class="ergebnis">
+        Der Switch ist <span id="status">inaktiv</span>.
+      </div>
       <button id="snap-button">Clear annotation</button>
       <label class="switch">
-      <input type="checkbox">
+      <input id="toggleswitch" type="checkbox">
       <span class="slider round"></span>
     </div>
 
@@ -88,6 +91,17 @@
        //   console.log("gltf click");
        //    document.getElementById("snap-button").click();
        // });
+       var input = document.getElementById('toggleswitch');
+      var outputtext = document.getElementById('status');
+
+      input.addEventListener('change',function(){
+            if(this.checked) {
+        outputtext.innerHTML = "aktiv";
+        }
+            else {
+        outputtext.innerHTML = "inaktiv";
+        }
+      });
 
 
          // detect target found

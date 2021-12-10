@@ -88,5 +88,5 @@ input:checked + .slider:before {
     font-size: 10px;
     left: 50vw;
     font-family: 'Zilla Slab Highlight', cursive;
-    color: black;
+    color: white;
 }

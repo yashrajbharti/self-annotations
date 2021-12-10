@@ -10,6 +10,8 @@ button{
   transform: translate(5px,5px);
   background-color: #FF10F0;
   margin: 20px;
+  font-family: 'Zilla Slab Highlight', cursive;
+  color: white;
   /* visibility: hidden; */
 }
 button:active{

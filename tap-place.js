@@ -18,6 +18,22 @@ const newElement = document.createElement('a-entity')
 
  newElement.setAttribute('gltf-model', '#arrow')
 
+
+ var checkbox = document.querySelector('input[type="checkbox"]');
+
+ checkbox.addEventListener('change', function () {
+   if (checkbox.checked) {
+     // do this
+     newElement.setAttribute('rotation', '0 0 0')
+     place.setAttribute('rotation', '0 0 90')
+   } else {
+     // do that
+     newElement.setAttribute('rotation', '0 0 90')
+     place.setAttribute('rotation', '0 0 0')
+
+   }
+ })
+
     place.appendChild(newElement)
 
     touchPoint.x  /= 2000;
@@ -40,24 +56,4 @@ remove.addEventListener('click', (event) => {
   if (place2.childNodes.length >= 1) {
   place2.removeChild(place2.lastChild)
   }
-});
-
-
-
-document.addEventListener('DOMContentLoaded', function () {
-  var checkbox = document.querySelector('input[type="checkbox"]');
-  const place3 = document.getElementById('place')
-
-  checkbox.addEventListener('change', function () {
-    if (checkbox.checked) {
-      // do this
-      place3.childNodes.setAttribute('rotation', '0 0 0')
-      place3.setAttribute('rotation', '0 0 90')
-    } else {
-      // do that
-      place3.childNodes.setAttribute('rotation', '0 0 90')
-      place3.setAttribute('rotation', '0 0 0')
-
-    }
-  });
 });

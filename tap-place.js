@@ -98,11 +98,13 @@ checkbox.addEventListener('change', function () {
 var foo = document.getElementById('foo');
 var textchange = document.querySelector('input[type="text"]');
 foo.addEventListener('click', (event) => {
-
-   place.lastChild.setAttribute('text', {
-     value: textchange.value,
+    if (place.childNodes.length > 1)
+   {
+     place.lastChild.setAttribute('text', {
+     value: 'haha',
      color: 'white',
      shader: 'msdf',
      font: './aclonica/Aclonica-Regular.json'
   });
+  }
  });

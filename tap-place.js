@@ -29,9 +29,10 @@ const newElement = document.createElement('a-entity')
  newElement.addEventListener('model-loaded', () => {
  newElement.setAttribute('visible', 'true')
 })
-});
 const remove = document.getElementById('snap-button')
 
 remove.addEventListener('click', (event) => {
   place.removeChild(newElement)
+});
+
 });

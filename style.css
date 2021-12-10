@@ -24,6 +24,7 @@ button:active{
   display: inline-block;
   width: 60px;
   height: 34px;
+  transform: translateY(10px);
 }
 
 .switch input {
@@ -57,11 +58,11 @@ button:active{
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #FF10F0;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #FF10F0;
 }
 
 input:checked + .slider:before {

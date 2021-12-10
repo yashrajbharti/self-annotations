@@ -5,6 +5,8 @@ place.addEventListener('click', (event) => {
 console.log("snap target clicked");
 // Create new entity for the new object
 const newElement = document.createElement('a-entity')
+const new2Element = document.createElement('a-entity')
+
 // The raycaster gives a location of the touch in the scene
 
  const touchPoint = event.detail.intersection.point
@@ -12,12 +14,29 @@ const newElement = document.createElement('a-entity')
 
   if (checkbox.checked === false){
     newElement.setAttribute('rotation', '0 0 90')
+    new2Element.setAttribute('rotation', '0 0 90')
   }
   if (checkbox.checked === true){
     newElement.setAttribute('rotation', '0 0 0')
+    new2Element.setAttribute('rotation', '0 0 0')
   }
 
  console.log(touchPoint);
+ new2Element.setAttribute('position', touchPoint)
+    new2Element.setAttribute('visible', 'true')
+    new2Element.setAttribute('scale', '1 1 1')
+    new2Element.setAttribute('rotate', '0 0 0')
+    new2Element.setAttribute('text', {
+      value: 'New Text',
+      color: 'red',
+      shader: 'msdf',
+      font: './aclonica/Aclonica-Regular.json'
+   });
+
+     place.appendChild(new2Element)
+
+
+
    newElement.setAttribute('position', touchPoint)
    newElement.setAttribute('visible', 'false')
    // newElement.setAttribute('rotation', '0 0 -90')
@@ -31,7 +50,7 @@ const newElement = document.createElement('a-entity')
     touchPoint.y  /= 2000;
     touchPoint.z  = 0.00001;
     newElement.setAttribute('position', touchPoint)
-
+    new2Element.setAttribute('position', touchPoint)
 
 
  newElement.addEventListener('model-loaded', () => {
@@ -44,7 +63,8 @@ const place2 = document.getElementById('place')
 
 remove.addEventListener('click', (event) => {
   console.log(place2.childNodes.length);
-  if (place2.childNodes.length >= 1) {
+  if (place2.childNodes.length > 1) {
+  place2.removeChild(place2.lastChild)
   place2.removeChild(place2.lastChild)
   }
 });

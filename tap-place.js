@@ -29,7 +29,7 @@ const newElement = document.createElement('a-entity')
      newElement.parentNode.removeChild()
    } else {
      // do that
-     newElement.setAttribute('rotation', '0 0 90')
+     newElement.setAttribute('rotation', '0 0 0')
      place.setAttribute('rotation', '0 0 0')
      newElement.parentNode.removeChild()
    }

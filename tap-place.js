@@ -35,7 +35,7 @@ if (place.hasChildNodes()) {
     // It has at least one
 remove.addEventListener('click', (event) => {
   console.log(place.childNodes.length);
-  place.removeChild(place.childNodes.length - 1)
+  place.removeChild(place.childNodes[place.childNodes.length - 1])
 
 });
 }

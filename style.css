@@ -92,5 +92,4 @@ input:checked + .slider:before {
 }
 #textinput, #foo{
   position: absolute;
-  transform: translate(40px,calc(100vh - 40px));
 }

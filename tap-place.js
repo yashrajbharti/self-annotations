@@ -10,24 +10,11 @@ const newElement = document.createElement('a-entity')
  const touchPoint = event.detail.intersection.point
  var checkbox = document.querySelector('input[type="checkbox"]');
 
- checkbox.addEventListener('change', function () {
-   if (checkbox.checked) {
-     // do this
-     newElement.setAttribute('rotation', '0 0 0')
-     place.setAttribute('rotation', '0 0 90')
-     while (place.firstChild) {
-    place.removeChild(place.lastChild);
-  }
-   } else {
-     // do that
-     place.setAttribute('rotation', '0 0 0')
-     while (place.firstChild) {
-    place.removeChild(place.lastChild);
-  }
-   }
- })
   if (checkbox.checked === false){
     newElement.setAttribute('rotation', '0 0 90')
+  }
+  if (checkbox.checked === true){
+    newElement.setAttribute('rotation', '0 0 0')
   }
 
  console.log(touchPoint);
@@ -61,3 +48,22 @@ remove.addEventListener('click', (event) => {
   place2.removeChild(place2.lastChild)
   }
 });
+
+
+var checkbox = document.querySelector('input[type="checkbox"]');
+
+checkbox.addEventListener('change', function () {
+  if (checkbox.checked) {
+    // do this
+    place.setAttribute('rotation', '0 0 90')
+    while (place.firstChild) {
+   place.removeChild(place.lastChild);
+ }
+  } else {
+    // do that
+    place.setAttribute('rotation', '0 0 0')
+    while (place.firstChild) {
+   place.removeChild(place.lastChild);
+ }
+  }
+})

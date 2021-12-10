@@ -95,7 +95,8 @@ checkbox.addEventListener('change', function () {
  }
   }
 })
-const foo = document.getElementById('foo')
+var foo = document.getElementById('foo');
+var textchange = document.querySelector('input[type="text"]');
 foo.addEventListener('click', (event) => {
-   place.lastChild.setAttribute("value", document.querySelector('input[type="text"]').value)
+   place.lastChild.setAttribute("value", textchange.value)
  });

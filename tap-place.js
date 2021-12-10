@@ -32,6 +32,10 @@ const new2Element = document.createElement('a-entity')
       font: './aclonica/Aclonica-Regular.json'
    });
 
+   function foo() {
+      new2Element.setAttribute("value", document.querySelector('input[type="text"]').value)
+    }
+
      place.appendChild(new2Element)
 
 

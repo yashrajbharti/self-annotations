@@ -22,7 +22,7 @@ const newElement = document.createElement('a-entity')
     touchPoint.x  /= 1000;
     touchPoint.y  /= 2000;
     touchPoint.z  /= 200000;
-    newElement.setAttribute('position', '0 -0.5 0')
+    newElement.setAttribute('position', touchPoint)
 
 
 

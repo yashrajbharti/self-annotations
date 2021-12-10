@@ -19,7 +19,6 @@ const newElement = document.createElement('a-entity')
  newElement.setAttribute('gltf-model', '#arrow')
 
     place.appendChild(newElement)
-    console.log(place.childNodes.length);
 
     touchPoint.x  /= 2000;
     touchPoint.y  /= 2000;
@@ -35,8 +34,9 @@ const remove = document.getElementById('snap-button')
 if (place.hasChildNodes()) {
     // It has at least one
 remove.addEventListener('click', (event) => {
-  newElement.parentNode.removeChild(place.lastChild)
   console.log(place.childNodes.length);
+  place.removeChild(place.childNodes.length - 1)
+
 });
 }
 });

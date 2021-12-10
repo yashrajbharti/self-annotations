@@ -19,6 +19,8 @@ const newElement = document.createElement('a-entity')
  newElement.setAttribute('gltf-model', '#arrow')
 
     place.appendChild(newElement)
+    console.log(place.childNodes.length);
+
     touchPoint.x  /= 2000;
     touchPoint.y  /= 2000;
     touchPoint.z  = 0.00001;
@@ -34,6 +36,7 @@ if (place.hasChildNodes()) {
     // It has at least one
 remove.addEventListener('click', (event) => {
   newElement.parentNode.removeChild(place.lastChild)
+  console.log(place.childNodes.length);
 });
 }
 });

@@ -1,8 +1,8 @@
 const sceneEl = document.querySelector('a-scene');
 const place = document.getElementById('place')
-place.addEventListener('targetFound', (event) => {
+place.addEventListener('click', (event) => {
 
-console.log("snap target found");
+console.log("snap target clicked");
 // Create new entity for the new object
 const newElement = document.createElement('a-entity')
 // The raycaster gives a location of the touch in the scene

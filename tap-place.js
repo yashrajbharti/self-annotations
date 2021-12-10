@@ -1,3 +1,22 @@
+document.addEventListener('DOMContentLoaded', function () {
+  var checkbox = document.querySelector('input[type="checkbox"]');
+
+  checkbox.addEventListener('change', function () {
+    if (checkbox.checked) {
+      // do this
+      newElement.setAttribute('rotation', '0 0 0')
+      place.setAttribute('rotation', '0 0 90')
+    } else {
+      // do that
+      newElement.setAttribute('rotation', '0 0 90')
+      place.setAttribute('rotation', '0 0 0')
+
+    }
+  });
+});
+
+
+
 const sceneEl = document.querySelector('a-scene');
 const place = document.getElementById('place')
 place.addEventListener('click', (event) => {
@@ -40,22 +59,4 @@ remove.addEventListener('click', (event) => {
   if (place2.childNodes.length >= 1) {
   place2.removeChild(place2.lastChild)
   }
-});
-
-
-document.addEventListener('DOMContentLoaded', function () {
-  var checkbox = document.querySelector('input[type="checkbox"]');
-
-  checkbox.addEventListener('change', function () {
-    if (checkbox.checked) {
-      // do this
-      newElement.setAttribute('rotation', '0 0 0')
-      place.setAttribute('rotation', '0 0 90')
-    } else {
-      // do that
-      newElement.setAttribute('rotation', '0 0 90')
-      place.setAttribute('rotation', '0 0 0')
-
-    }
-  });
 });

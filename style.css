@@ -90,12 +90,7 @@ input:checked + .slider:before {
     font-family: 'Zilla Slab Highlight', cursive;
     color: white;
 }
-#textchanger{
+#textinput, #foo{
   position: absolute;
-  top: 50%;
-  left: 50%;
-}
-#textinput{
-  width: 20px;
-  padding: 4px;
+  transform: translate(40px,calc(100vh - 40px));
 }

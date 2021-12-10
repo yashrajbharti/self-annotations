@@ -16,10 +16,10 @@ const newElement = document.createElement('a-entity')
    newElement.setAttribute('model', 'gltf-model');
 
     place.appendChild(newElement)
-    // touchPoint.x  /= 1000;
-    touchPoint.y  -= -0.3;
-    // touchPoint.z  /= 200000;
-
+    touchPoint.x  /= 1000;
+    touchPoint.y  /= 2000;
+    touchPoint.z  /= 200000;
+    touchPoint.y  -= 0.3;
     newElement.setAttribute('position', touchPoint)
 
 

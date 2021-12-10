@@ -24,7 +24,7 @@ button:active{
   display: inline-block;
   width: 60px;
   height: 34px;
-  transform: translateY(-15px);
+  transform: translateY(-13px);
 }
 
 .switch input {

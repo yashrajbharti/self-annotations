@@ -58,7 +58,7 @@ checkbox.addEventListener('change', function () {
     place.setAttribute('rotation', '0 0 90')
     while (place.firstChild) {
    place.removeChild(place.lastChild);
- }
+ } // Portrait and Landscape has different calibrations, that's why it's important to work on one at a time
   } else {
     // do that
     place.setAttribute('rotation', '0 0 0')

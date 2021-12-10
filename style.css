@@ -79,9 +79,9 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-.ergebnis {
+.mode {
     font-size: 2rem;
     font-family: sans-serif;
-    padding: 2rem 0 2rem 2rem;
+
     color: white;
 }

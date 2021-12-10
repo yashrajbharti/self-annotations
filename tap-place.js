@@ -1,5 +1,5 @@
 const sceneEl = document.querySelector('a-scene');
-const place = document.getElementById('snapshot-target')
+const place = document.getElementById('place')
 place.addEventListener('targetFound', (event) => {
 
 console.log("snap target found");

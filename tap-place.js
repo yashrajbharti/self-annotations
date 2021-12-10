@@ -32,11 +32,15 @@ const newElement = document.createElement('a-entity')
 })
 const remove = document.getElementById('snap-button')
 
-    // It has at least one
-remove.addEventListener('click', (event) => {
-  console.log(place.childNodes.length);
-  if (place.childNodes.length >= 1) {
-  newElement.parentNode.removeChild(place.lastChild)
-  }
+
 });
+
+
+const place2 = document.getElementById('place')
+
+remove.addEventListener('click', (event) => {
+  console.log(place2.childNodes.length);
+  if (place2.childNodes.length >= 1) {
+  place2.removeChild(place2.lastChild)
+  }
 });

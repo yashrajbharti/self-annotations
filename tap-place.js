@@ -55,8 +55,8 @@ const new2Element = document.createElement('a-entity')
     new2Element.setAttribute('position', {x: x2, y: y2, z: 0.00001});
     }
     if (checkbox.checked === true){
-      var x3 = touchPoint.x - 0.5;
-      var y3 = touchPoint.y + 0.2;
+      var x3 = touchPoint.x + 0.1;
+      var y3 = touchPoint.y - 0.6;
     new2Element.setAttribute('position', {x: x3, y: y3, z: 0.00001});
     }
 

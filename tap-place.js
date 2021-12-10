@@ -11,15 +11,15 @@ const newElement = document.createElement('a-entity')
 
  console.log(touchPoint);
    newElement.setAttribute('position', touchPoint)
-   newElement.setAttribute('visible', 'true')
+   newElement.setAttribute('visible', 'false')
 
  newElement.setAttribute('gltf-model', '#arrow')
- 
+
     place.appendChild(newElement)
     touchPoint.x  /= 1000;
     touchPoint.y  /= 2000;
     touchPoint.z  /= 200000;
-    newElement.setAttribute('position', touchPoint)
+    newElement.setAttribute('position', '0 -0.5 0')
 
 
 

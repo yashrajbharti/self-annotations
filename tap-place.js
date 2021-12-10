@@ -22,7 +22,7 @@ const newElement = document.createElement('a-entity')
    newElement.setAttribute('material', 'color', 'red');
    newElement.setAttribute('material', 'side', 'double');
 
-    place.appendChild(newElement)
+    snaptarget.appendChild(newElement)
     // touchPoint.x  /= 1000;
     // touchPoint.y  /= 2000;
     // touchPoint.z  /= 200000;

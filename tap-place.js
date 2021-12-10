@@ -98,5 +98,6 @@ checkbox.addEventListener('change', function () {
 var foo = document.getElementById('foo');
 var textchange = document.querySelector('input[type="text"]');
 foo.addEventListener('click', (event) => {
+  console.log(place.childNodes.length);
    place.lastChild.setAttribute("value", textchange.value)
  });

@@ -1,6 +1,6 @@
 const sceneEl = document.querySelector('a-scene');
-const snaptarget = document.getElementById('snapshot-target')
-snaptarget.addEventListener('targetFound', (event) => {
+const place = document.getElementById('snapshot-target')
+place.addEventListener('targetFound', (event) => {
 
 console.log("snap target found");
 // Create new entity for the new object
@@ -15,7 +15,7 @@ const newElement = document.createElement('a-entity')
 
    newElement.setAttribute('model', 'gltf-model');
 
-    snaptarget.appendChild(newElement)
+    place.appendChild(newElement)
     touchPoint.x  /= 1000;
     touchPoint.y  /= 2000;
     touchPoint.z  /= 200000;

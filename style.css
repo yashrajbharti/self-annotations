@@ -8,9 +8,7 @@ button{
   padding: 10px 15px;
   font-family: 'Zilla Slab', serif;
   color: #fff;
-  transform: translate(5px,5px);
   background-color: #FF10F0;
-  margin: 20px;
   /* visibility: hidden; */
 }
 button:active{
@@ -19,16 +17,14 @@ button:active{
   font-weight: bold;
   padding: 10px 15px;
   color: #FF10F0;
-  transform: translate(5px,5px);
   background-color: #fff;
-  margin: 20px;
 }
 .switch {
-  position: relative;
+  position: absolute;
   display: inline-block;
   width: 60px;
   height: 34px;
-  transform: translate(20px, 10px);
+  transform: translate(30px, 20px);
 }
 
 .switch input#toggleswitch {
@@ -87,17 +83,33 @@ input:checked + .slider:before {
     position: absolute;
     padding: 4px;
     font-size: 13px;
-    transform: translate(166px, 3px);
     font-family: 'Zilla Slab Highlight', cursive;
-    color: white;
+    color: black;
+    transform: translate(100px, 17px);
+    width: 100px;
 }
 #textinput, #foo{
   position: absolute;
 }
 #textinput input#inputtext{
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  padding: 8px 20px;
   box-sizing: border-box;
-  border-radius: 10px;
+}
+
+#snap-button{
+  position: absolute;;
+  left: 50vw;
+  bottom: -100vh;
+  transform: translate(-50%, calc(-50% - 15px));
+  width: 120px;
+}
+#inputtext{
+  width: 100px;
+  font-family: 'Zilla Slab', serif;
+  border-radius: 30px;
+  font-size: 13px;
+  transform: translate(200px, -22px);
+}
+.replacebutton{
+  transform: translate(320px, -24px);
 }

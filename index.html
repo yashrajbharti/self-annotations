@@ -8,6 +8,19 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;600;700&display=swap" rel="stylesheet">
+    <script>
+    var textchange = document.getElementById('inputtext');
+    const place0 = document.getElementById('place')
+
+    function foo() {
+          if (place0.childNodes.length > 1)
+         {
+           place0.lastChild.setAttribute('text', {
+           value: textchange.value
+        });
+      }
+      }
+</script>
   </head>
      <body>
     <div style="position: absolute; z-index: 1000">
@@ -21,7 +34,7 @@
       <form id="textinput">
       <input id="inputtext" type="text" value="Edit Text">
       </form>
-      <button id="foo">Replace</button>
+      <button  onclick="foo()">Replace</button>
       </div>
 
 

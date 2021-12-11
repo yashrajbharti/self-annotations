@@ -10,9 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;600;700&display=swap" rel="stylesheet">
     <script>
     function foo() {
-    document.getElementById('place').lastChild.setAttribute('text', {
+      if (document.getElementById('place').childNodes.length > 1) {
+      document.getElementById('place').lastChild.setAttribute('text', {
       value: document.querySelector('input[type="text"]').value
     });
+  }
   }
 </script>
 

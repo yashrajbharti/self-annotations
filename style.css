@@ -104,7 +104,7 @@ input:checked + .slider:before {
   width: 140px;
 }
 #inputtext{
-  width: 90px;
+  width: 95px;
   font-family: 'Zilla Slab', serif;
   border-radius: 30px;
   font-size: 13px;

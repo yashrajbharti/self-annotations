@@ -1,4 +1,3 @@
-const sceneEl = document.querySelector('a-scene');
 const place = document.getElementById('place')
 place.addEventListener('click', (event) => {
 

@@ -111,5 +111,5 @@ input:checked + .slider:before {
   transform: translate(165px, -12px);
 }
 .replacebutton{
-  transform: translate(265px, -14px);
+  transform: translate(266px, -14px);
 }

@@ -9,14 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;600;700&display=swap" rel="stylesheet">
     <script>
-    var textchange = document.getElementById('inputtext');
-    const place0 = document.getElementById('place')
-
     function foo() {
-           place0.lastChild.setAttribute('text', {
-           value: textchange.value
-           console.log(textchange.value);
-        });
+    document.getElementById('faqtext').setAttribute("value", document.querySelector('input[type="text"]').value)
       }
 </script>
   </head>
@@ -32,7 +26,7 @@
       <form id="textinput">
       <input id="inputtext" type="text" value="Edit Text">
       </form>
-      <button  onclick="foo()">Replace</button>
+      <button onclick="foo()">Replace</button>
       </div>
 
 
@@ -55,7 +49,6 @@
           <a-plane id="faq"  color="#fff"  position="-0.065 0.3 -0.0000001" height="0.08" width="1.1" rotation="0 0 0"></a-plane>
           <a-entity id="arrow" gltf-model="#arrow" position="0 -0.3 0" rotation="0 0 90" scale="0.001 0.001 0.001"></a-entity>
           <a-plane id="place" class="clickable" color="#fff" opacity="0.0" position="0 0 0" height="100" width="100" rotation="0 0 0"></a-plane>
-
 
           <a-entity geometry="primitive: ring; radiusInner: 0.9; radiusOuter: 1" material="side: double; color:#f00" position="0.025 0.05 0" scale="0.03 0.03 0.03"></a-entity>
           <a-entity text="value:+12Volts; color:#f00; shader: msdf; font:./aclonica/Aclonica-Regular.json;" scale="1 1 1" position="0.45 0.08 0"></a-entity>

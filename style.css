@@ -27,10 +27,10 @@ button:active{
   display: inline-block;
   width: 60px;
   height: 34px;
-  transform: translate(20px, -13px);
+  transform: translate(20px, 10px);
 }
 
-.switch input {
+.switch input#toggleswitch {
   opacity: 0;
   width: 0;
   height: 0;

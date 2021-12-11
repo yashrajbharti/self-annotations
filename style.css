@@ -104,12 +104,12 @@ input:checked + .slider:before {
   width: 140px;
 }
 #inputtext{
-  width: 85px;
+  width: 90px;
   font-family: 'Zilla Slab', serif;
   border-radius: 30px;
   font-size: 13px;
-  transform: translate(165px, -12px);
+  transform: translate(169px, -12px);
 }
 .replacebutton{
-  transform: translate(266px, -14px);
+  transform: translate(269px, -14px);
 }

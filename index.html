@@ -119,15 +119,6 @@
         }
       });
 
-      document.addEventListener("DOMContentLoaded", function() {
-         const sceneEl = document.querySelector('a-scene');
-         const arSystem = sceneEl.systems["mindar-face-system"];
-      const changer = document.querySelector('#inputtext');
-      if(changer === document.activeElement){
-        arSystem.stop();
-      }
-      });
-
          // detect target found
         const snaptarget = document.querySelector('#snapshot-target');
         snaptarget.addEventListener("targetFound", event => {

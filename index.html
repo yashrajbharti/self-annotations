@@ -119,6 +119,16 @@
         }
       });
 
+      document.addEventListener("DOMContentLoaded", function() {
+         const sceneEl = document.querySelector('a-scene');
+         const arSystem = sceneEl.systems["mindar-face-system"];
+      const changer = document.querySelector('#inputtext');
+      if(changer === document.activeElement){
+        arSystem.stop();
+      }
+      else
+        arSystem.start();
+      });
 
          // detect target found
         const snaptarget = document.querySelector('#snapshot-target');
@@ -128,6 +138,5 @@
         </script>
 
         <script src="tap-place.js" charset="utf-8"></script>
-        <script src="debug.js" charset="utf-8"></script>
   </body>
 </html>

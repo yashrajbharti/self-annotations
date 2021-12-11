@@ -85,7 +85,7 @@ input:checked + .slider:before {
     font-size: 13px;
     font-family: 'Zilla Slab Highlight', cursive;
     color: black;
-    transform: translate(85px, 17px);
+    transform: translate(82px, 17px);
     width: 100px;
 }
 #textinput, #foo{

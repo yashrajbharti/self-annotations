@@ -95,14 +95,14 @@ checkbox.addEventListener('change', function () {
  }
   }
 })
-const foo = document.getElementById('foo');
-var textchange = document.getElementById('inputtext');
-console.log(textchange.value);
-foo.addEventListener('click', (event) => {
-    if (place.childNodes.length > 1)
-   {
-     place.lastChild.setAttribute('text', {
-     value: textchange.value
-  });
-}
- });
+// const foo = document.getElementById('foo');
+// var textchange = document.getElementById('inputtext');
+// console.log(textchange.value);
+// foo.addEventListener('click', (event) => {
+//     if (place.childNodes.length > 1)
+//    {
+//      place.lastChild.setAttribute('text', {
+//      value: textchange.value
+//   });
+// }
+//  });

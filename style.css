@@ -24,7 +24,7 @@ button:active{
   display: inline-block;
   width: 60px;
   height: 34px;
-  transform: translate(30px, 20px);
+  transform: translate(15px, 20px);
 }
 
 .switch input#toggleswitch {
@@ -85,7 +85,7 @@ input:checked + .slider:before {
     font-size: 13px;
     font-family: 'Zilla Slab Highlight', cursive;
     color: black;
-    transform: translate(100px, 17px);
+    transform: translate(85px, 17px);
     width: 100px;
 }
 #textinput, #foo{
@@ -108,8 +108,8 @@ input:checked + .slider:before {
   font-family: 'Zilla Slab', serif;
   border-radius: 30px;
   font-size: 13px;
-  transform: translate(170px, -12px);
+  transform: translate(155px, -12px);
 }
 .replacebutton{
-  transform: translate(280px, -14px);
+  transform: translate(265px, -14px);
 }

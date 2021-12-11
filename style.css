@@ -93,7 +93,7 @@ input:checked + .slider:before {
 #textinput, #foo{
   position: absolute;
 }
-#textinput input{
+#textinput input#inputtext{
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;

@@ -32,9 +32,6 @@ const new2Element = document.createElement('a-entity')
       font: './aclonica/Aclonica-Regular.json'
    });
 
-     place.appendChild(new2Element)
-
-
 
    newElement.setAttribute('position', touchPoint)
    newElement.setAttribute('visible', 'false')
@@ -44,6 +41,7 @@ const new2Element = document.createElement('a-entity')
 
  newElement.setAttribute('gltf-model', '#arrow')
     place.appendChild(newElement)
+    place.appendChild(new2Element)
 
     touchPoint.x  /= 2000;
     touchPoint.y  /= 2000;

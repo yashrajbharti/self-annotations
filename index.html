@@ -124,6 +124,15 @@
         snaptarget.addEventListener("targetFound", event => {
         console.log("snap target found");
         });
+
+        document.ontouchmove = function(e){
+         e.preventDefault();
+         }
+         input.onfocus = function () {
+          window.scrollTo(0, 0);
+          document.body.scrollTop = 0;
+          }
+
         </script>
 
         <script src="tap-place.js" charset="utf-8"></script>

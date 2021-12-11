@@ -124,10 +124,10 @@
         snaptarget.addEventListener("targetFound", event => {
         console.log("snap target found");
         });
-
+        const sceneEl = document.querySelector('a-scene');
+        const arSystem = sceneEl.systems["mindar-face-system"];
         document.getElementById('inputtext').addEventListener("click", () => {
-	            alert('hello');
-              console.log('hello');
+	            arSystem.stop();
         });
 
 

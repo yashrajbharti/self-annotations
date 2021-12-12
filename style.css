@@ -122,3 +122,6 @@ input:checked + .slider:before {
   padding-top: 8px;
   transform: translate(289px, 14px);
 }
+button.replacebutton:active{
+  padding-top: 8px;
+}

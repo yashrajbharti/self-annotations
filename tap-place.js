@@ -11,6 +11,9 @@ const new2Element = document.createElement('a-entity')
  const touchPoint = event.detail.intersection.point
  var checkbox = document.querySelector('input[type="checkbox"]');
 
+ localStorage.setItem('touchPoint0', touchPoint);
+ console.log(touchPoint0);
+
   if (checkbox.checked === false){
     newElement.setAttribute('rotation', '0 0 90')
     new2Element.setAttribute('rotation', '0 0 0')
@@ -20,8 +23,7 @@ const new2Element = document.createElement('a-entity')
     new2Element.setAttribute('rotation', '0 0 270')
   }
 
- console.log(touchPoint);
- new2Element.setAttribute('position', touchPoint)
+    new2Element.setAttribute('position', touchPoint)
     new2Element.setAttribute('visible', 'true')
     new2Element.setAttribute('scale', '1 1 1')
     new2Element.setAttribute('text', {

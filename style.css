@@ -108,8 +108,8 @@ input:checked + .slider:before {
 #snap-button{
   position: absolute;;
   left: 50vw;
-  top: 95vh;
-  transform: translate(-50%, -5vh);
+  top: 90vh;
+  transform: translate(-50%, 0px);
   width: 140px;
 }
  #inputtext{

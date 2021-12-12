@@ -68,13 +68,10 @@ const coords = touchPoint;
     coords.z = touchPoint.z;
 
 localStorage.setItem('TextCoords', JSON.stringify(coords));
+var x = JSON.parse(localStorage.getItem('ArrowCoords'));
 
-localStorage.setItem('Arrow', CircularJSON.stringify(newElement));
-JSON.parse(localStorage.getItem('Arrow'));
-localStorage.setItem('Text', CircularJSON.stringify(new2Element));
-JSON.parse(localStorage.getItem('Text'));
 
-console.log(localStorage);
+console.log(x);
 });
 
 const remove = document.getElementById('snap-button')

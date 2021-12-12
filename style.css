@@ -108,7 +108,7 @@ input:checked + .slider:before {
   position: absolute;;
   left: 50vw;
   bottom: -100vh;
-  transform: translate(-50%, calc(-100% - 30px));
+  transform: translate(-50%, -100%);
   width: 140px;
 }
 #inputtext{

@@ -5,7 +5,7 @@ body{
   position: relative;
   height: 861.333px !important;
 }
-#snapshot-target{
+#snapshot-target *{
   position: absolute !important;
   height: 861.333px !important;
 }

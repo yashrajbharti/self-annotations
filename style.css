@@ -4,7 +4,7 @@
 body{
   position: relative;
 }
-a-scene{
+a-scene, #snapshot-target{
   position: absolute !important;
   height: 100vh !important;
 }

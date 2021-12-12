@@ -116,8 +116,8 @@ input:checked + .slider:before {
   font-family: 'Zilla Slab', serif;
   border-radius: 30px;
   font-size: 13px;
-  transform: translate(169px, -12px);
+  transform: translate(189px, 10px);
 }
 .replacebutton{
-  transform: translate(269px, -14px);
+  transform: translate(289px, 10px);
 }

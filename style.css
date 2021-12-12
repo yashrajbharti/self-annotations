@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;600;700&display=swap');
   html,body{margin: 0; height: 100%; overflow: hidden}
 body{
+  min-height: 100%;
   position: relative;
 }
 a-scene, #snapshot-target{

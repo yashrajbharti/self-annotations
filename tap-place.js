@@ -60,18 +60,6 @@ const new2Element = document.createElement('a-entity')
  newElement.addEventListener('model-loaded', () => {
  newElement.setAttribute('visible', 'true')
 })
-// LOCAL STORAGE
-localStorage.setItem('ArrowCoords', JSON.stringify(touchPoint));
-const coords = touchPoint;
-    coords.x = touchPoint.x - 0.1;
-    coords.y = touchPoint.y - 0.41;
-    coords.z = touchPoint.z;
-
-localStorage.setItem('TextCoords', JSON.stringify(coords));
-var x = JSON.parse(localStorage.getItem('ArrowCoords'));
-
-
-console.log(x);
 });
 
 const remove = document.getElementById('snap-button')

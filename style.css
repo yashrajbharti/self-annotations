@@ -4,7 +4,7 @@
 body{
   position: relative;
 }
-#snapshot-target {
+a-scene *{
   position: absolute;
 }
 button{

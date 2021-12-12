@@ -11,9 +11,6 @@ const new2Element = document.createElement('a-entity')
  const touchPoint = event.detail.intersection.point
  var checkbox = document.querySelector('input[type="checkbox"]');
 
- localStorage.setItem('touchPoint0', touchPoint);
- console.log(localStorage);
-
   if (checkbox.checked === false){
     newElement.setAttribute('rotation', '0 0 90')
     new2Element.setAttribute('rotation', '0 0 0')
@@ -63,6 +60,11 @@ const new2Element = document.createElement('a-entity')
  newElement.addEventListener('model-loaded', () => {
  newElement.setAttribute('visible', 'true')
 })
+localStorage.setItem('Element1', newElement);
+localStorage.setItem('Element2', new2Element);
+console.log(newElement);
+console.log(new2Element);
+console.log(localStorage);
 });
 
 const remove = document.getElementById('snap-button')

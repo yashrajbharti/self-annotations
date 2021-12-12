@@ -127,7 +127,6 @@ button.replacebutton:active{
     width: 100vw;
     height: 100vh;
     border-radius: 0;
-    transform: translate3d(0px,0px,5px);
-    z-index: 1002;
+    transform: translate(0px,0px);
   }
 }

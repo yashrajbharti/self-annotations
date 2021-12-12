@@ -126,6 +126,10 @@
         console.log("snap target found");
         });
 
+        document.getElementById('textinput').addEventListener('submit', function(e) {
+        search(document.getElementById('inputtext'));
+          e.preventDefault();
+        }, false);
 
         </script>
 

@@ -60,7 +60,7 @@ const new2Element = document.createElement('a-entity')
  newElement.addEventListener('model-loaded', () => {
  newElement.setAttribute('visible', 'true')
 })
-
+// LOCAL STORAGE
 localStorage.setItem('ArrowCoords', JSON.stringify(touchPoint));
 const coords = touchPoint;
     coords.x = touchPoint.x - 0.1;
@@ -68,6 +68,11 @@ const coords = touchPoint;
     coords.z = touchPoint.z;
 
 localStorage.setItem('TextCoords', JSON.stringify(coords));
+
+localStorage.setItem('Arrow', JSON.stringify(newElement));
+JSON.parse(localStorage.getItem('Arrow'));
+localStorage.setItem('Text', JSON.stringify(new2Element));
+JSON.parse(localStorage.getItem('Text'));
 
 console.log(localStorage);
 });

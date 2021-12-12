@@ -29,7 +29,7 @@
       <input id="toggleswitch" type="checkbox">
       <span class="slider round"></span>
       </label>
-      <form id="textinput">
+      <form id="textinput" onsubmit="return false">
       <input id="inputtext" type="text" value="Edit Text">
       </form>
       <button class="replacebutton" onclick="foo()">Replace</button>
@@ -126,21 +126,6 @@
         console.log("snap target found");
         });
 
-
-      // Get the input field
-      var input = document.getElementById("inputtext");
-      document.addEventListener('DOMContentLoaded', function(event) {
-      // Execute a function when the user releases a key on the keyboard
-      input.addEventListener("keyup", function(event) {
-      // Number 13 is the "Enter" key on the keyboard
-      if (event.keyCode === 13) {
-        // Cancel the default action, if needed
-        event.preventDefault();
-        // Trigger the button element with a click
-        document.querySelector(".replacebutton").click();
-      }
-    });
-});
 
         </script>
 

@@ -117,7 +117,7 @@ input:checked + .slider:before {
 }
 .replacebutton{
   padding-top: 8px;
-  transform: translate(289px, 14px);
+  transform: translate(289px, 15px);
 }
 button.replacebutton:active{
   padding-top: 8px;

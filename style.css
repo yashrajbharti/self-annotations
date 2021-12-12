@@ -30,6 +30,7 @@ button:active{
   height: 34px;
   transform: translate(15px, 20px);
   z-index: 1001;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 .switch input#toggleswitch {

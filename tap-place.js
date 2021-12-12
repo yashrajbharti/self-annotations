@@ -60,10 +60,9 @@ const new2Element = document.createElement('a-entity')
  newElement.addEventListener('model-loaded', () => {
  newElement.setAttribute('visible', 'true')
 })
-localStorage.setItem('Element1', newElement);
-localStorage.setItem('Element2', new2Element);
-console.log(newElement);
-console.log(new2Element);
+localStorage.setItem('Element1', JSON.stringify(newElement));
+localStorage.setItem('Element2', JSON.stringify(new2Element));
+
 console.log(localStorage);
 });
 

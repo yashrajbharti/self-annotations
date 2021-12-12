@@ -62,11 +62,11 @@ const new2Element = document.createElement('a-entity')
 })
 
 localStorage.setItem('ArrowCoords', JSON.stringify(touchPoint));
-const coords = {
-    x: x3,
-    y: y3,
-    z: touchPoint.z
-}
+const coords = touchPoint;
+    coords.x = touchPoint.x - 0.1;
+    coords.y = touchPoint.y - 0.41;
+    coords.z = touchPoint.z;
+
 localStorage.setItem('TextCoords', JSON.stringify(coords));
 
 console.log(localStorage);

@@ -3,11 +3,11 @@
   html,body{margin: 0; height: 100vh; overflow: hidden}
 body{
   position: relative;
-  height: 861.333px !important;
+  height: 100vh !important;
 }
-#snapshot-target *{
+a-scene, #snapshot-target{
   position: absolute !important;
-  height: 861.333px !important;
+  height: 100vh !important;
 }
 button{
   border: 2px solid #fff;

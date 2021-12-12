@@ -4,9 +4,9 @@
 body{
   position: relative;
 }
-#snapshot-target a-entity{
-  position: absolute;
-  height: 100vh;
+a-scene{
+  position: absolute !important;
+  height: 100vh !important;
 }
 button{
   border: 2px solid #fff;

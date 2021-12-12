@@ -12,7 +12,7 @@ const new2Element = document.createElement('a-entity')
  var checkbox = document.querySelector('input[type="checkbox"]');
 
  localStorage.setItem('touchPoint0', touchPoint);
- console.log(touchPoint0);
+ console.log(localStorage);
 
   if (checkbox.checked === false){
     newElement.setAttribute('rotation', '0 0 90')

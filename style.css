@@ -122,3 +122,9 @@ input:checked + .slider:before {
 button.replacebutton:active{
   padding-top: 8px;
 }
+#inputtext:focus{
+  width: 100vw;
+  height: 50vh;
+  border-radius: 0;
+  transform: translate3d(0px,0px,5px);
+}

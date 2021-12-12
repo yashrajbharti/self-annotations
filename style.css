@@ -128,9 +128,5 @@ button.replacebutton:active{
     height: 100vh;
     border-radius: 0;
     transform: translate(0px,0px);
-    background-color: #FF10F0;
-    background-image: -webkit-linear-gradient(bottom right, #FF10F0 0%, #7ee8fa 74%);
-    background-image: -o-linear-gradient(bottom right, #FF10F0 0%, #7ee8fa 74%);
-    background-image: linear-gradient(to top left, #FF10F0 0%, #7ee8fa 74%);
       }
 }

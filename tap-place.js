@@ -69,9 +69,9 @@ const coords = touchPoint;
 
 localStorage.setItem('TextCoords', JSON.stringify(coords));
 
-localStorage.setItem('Arrow', JSON.stringify(newElement));
+localStorage.setItem('Arrow', CircularJSON.stringify(newElement));
 JSON.parse(localStorage.getItem('Arrow'));
-localStorage.setItem('Text', JSON.stringify(new2Element));
+localStorage.setItem('Text', CircularJSON.stringify(new2Element));
 JSON.parse(localStorage.getItem('Text'));
 
 console.log(localStorage);

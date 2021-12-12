@@ -2,12 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;600;700&display=swap');
   html,body{margin: 0; height: 100vh; overflow: hidden}
 body{
-  min-height: 100vh;
   position: relative;
 }
-a-scene, #snapshot-target{
+a-scene{
   position: absolute !important;
-  height: 100vh !important;
+  height: 861.333px !important;
 }
 button{
   border: 2px solid #fff;
